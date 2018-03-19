@@ -1,0 +1,79 @@
+body {
+	margin: 0;
+}
+
+h1 {
+	background-color: rgb(120,120,120);
+	color: white;
+	font-family: 'Comic Sans MS', cursive, sans-serif;
+	font-size: 200%;
+	text-align: center;
+	text-shadow: 3px 3px 5px black;
+	border: 2px solid black;
+	padding: 10px;
+	margin: 0;
+}
+
+ul {
+	list-style-type: none;
+	background-color: rgb(180,180,180);
+	color: white;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+li {
+	float: left;
+	width: 25%;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+li a {
+	color: white;
+	text-decoration: none;
+	font-family: 'Comic Sans MS', cursive, sans-serif;
+	display: inline-block;
+	text-align: center;
+	padding: 10px 0px;
+	width: 100%;
+	margin: 0;
+	text-shadow: 2px 2px 5px black;
+}
+
+li a:hover {
+    background-color: rgb(120,120,120);
+    width: 100%;
+    text-decoration: underline;
+    transition-duration: 0.4s;
+}
+
+.button {
+	cursor: pointer;
+	color: white;
+	font-family: 'Comic Sans MS', cursive, sans-serif;
+	background-color: rgb(76,175,80);
+	font-size: 13px;
+	padding: 5px 10px;
+	border: 1px solid rgb(60,140,64);
+	border-radius: 4px;
+	transition-duration: 0.4s;
+	width: 172px;
+}
+
+.button:hover {
+	background-color: rgb(60,140,64);
+}
+
+.campuri {
+	border-radius: 4px;
+	border: 1px solid black;
+	height: 20px;
+}
+
+.textarea {
+	border-radius: 4px;
+	border: 1px solid black;
+}
