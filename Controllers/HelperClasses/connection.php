@@ -1,11 +1,5 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * User: Alex
- * Date: 10-Apr-17
- * Time: 17:45
- */
 class OracleConnection
 {
 
