@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>OPeM - Scholarly Raport</title>
+    <link rel="stylesheet" href="http://scholarly.vernacular.io/scholarly.css">
+</head>
+<body prefix="schema: http://schema.org/ xsd: http://www.w3.org/2001/XMLSchema# sa: https://ns.science.ai/">
+<header>
+    <p class="title">OPeM - Scholarly Raport</p>
+</header>
+<article id="article1" typeof="schema:ScholarlyArticle" resource="#">
+    <h1>Online Petition Manager</h1>
+
+    <section>
+        <ol>
+            <li property="schema:author" typeof="sa:ContributorRole">
+                <a property="schema:author" href="https://github.com/radulungu" typeof="schema:Person">
+                    <span property="schema:givenName">Radu-Ionut</span>
+                    <span property="schema:familyName">Lungu</span>
+                </a>
+                <sup property="sa:roleContactPoint" typeof="schema:ContactPoint">
+                </sup>
+            </li>
+
+            <li property="schema:contributor" typeof="sa:ContributorRole">
+                <a property="schema:contributor" href="https://github.com/Danila-Codrin" typeof="schema:Person">
+                    <span property="schema:givenName">Codrin</span>
+                    <span property="schema:familyName">Danila</span>
+                </a>
+            </li>
+        </ol>
+        <!-- The affiliation list -->
+        <ol>
+            <a href="https://www.info.uaic.ro/bin/Main/">
+                <span property="schema:name">Universitatea Alexandru Ioan Cuza, Facultatea de Informatica Iasi</span>
+            </a>
+        </ol>
+    </section>
+
+    <section typeof="sa:Abstract" id="abstract">
+        <h2>Cuprins</h2>
+        <p>1.Descriere</p>
+        <p>2.Tehnologii si limbaje utilizate</p>
+        <p>3.Diagrama baza de date + diagrama use case</p>
+        <p>4.Atributii</p>
+        <p>5.Retrospectiva</p>
+        <p>6.Bibliografie</p>
+    </section>
+
+    <section typeof="sa:MaterialsAndMethods">
+        <h2>1. Descriere</h2>
+        <aside typeof="schema:WPSideBar">
+            <h4>Cerinta proiectului:</h4>
+            <p> Sa se realizeze o aplicatie Web care permite crearea si gestionarea de petitii online. Administratorul sitului va putea avea acces la rapoarte privind starea petitiilor, numarul de solicitanti, destinatarii petitiilor, data de expirare a unei cauze, petitii similare etc. O persoana nu va putea semna de mai multe ori o petitie. De asemenea, se va oferi suport pentru cautarea multi-criteriala si partajarea datelor pe minim o retea sociala. Rapoartele generate vor fi disponibile in formatele HTML si PDF. Noile petitii disponibile vor fi semnalate via un flux de stiri in format Atom.</p>
+            <h4>Ideea de baza:</h4>
+            <p> Site-ul Petitii online pune la dispozitia dumneavoastra o platforma gratuita pentru conceperea de petitii. Dupa cum stiti, in ultimii ani, implicarea online vede o ascensiune continua mai ales in randul tinerilor. Astfel, consideram ca acestia trebuie sa gaseasca un loc in care sa isi exprime nemultumirile si nevoile. Asadar, scopul acestor petitii este atragerea atentiei publicului larg asupra problemelor societatii romanesti si nu numai.</p>
+            <p> Cu ajutorul site-ului nostru aveti posibilitatea sa creati si sa publicati orice petitie doriti si sa o faceti cunoscuta lumii intregi. Utilizand site-ul nostru pentru a va face cunoscute gandurile, veti beneficia de impact si vizibilitate catre publicul larg. Acestea fiind spuse, de ce sa mai asteptati? Creati-va chiar acum propria petitie!</p>
+        </aside>
+    </section>
+
+    <section typeof="sa:MaterialsAndMethods">
+        <h2>2. Tehnologii si limbaje utilizate</h2>
+        <aside typeof="schema:WPSideBar">
+            <p>In alcatuirea aplicatiei noastre am folosit urmatoarele tehnologii si limbaje de programare:</p>
+            <ol>
+                <li>
+                    HTML5 / CSS3 / PHP
+                </li>
+                <li>
+                    ORACLE (SQLDeveloper) - Database
+                </li>
+                <li>
+                    GitHub - repository
+                </li>
+            </ol>
+        </aside>
+    </section>
+
+    <section typeof="sa:MaterialsAndMethods">
+        <h2>3. Diagrame</h2>
+        </figure>
+                <figure typeof="sa:Image">
+            <figcaption>Diagrama Master:</figcaption>
+            <img class="imag" src="master.png">
+        </figure>
+        <figure typeof="sa:Image">
+            <figcaption>Arhitectura bazei de date:</figcaption>
+            <img class="imag" src="DB.png">
+        </figure>
+        <figure typeof="sa:Image">
+            <figcaption>Diagrama use case:</figcaption>
+            <img class="imag" src="UML.png">
+    </section>
+
+    <section typeof="sa:MaterialsAndMethods">
+
+        <h2>4. Atributii</h2>
+        <figure typeof="sa:Table">
+            <table>
+                <thead>
+                <tr>
+                    <th>Nume</th>
+                    <th>Task</th>
+                </tr>
+                </thead>
+                <tr>
+                    <th>Lungu Radu-Ionut</th>
+                    <th>BD + Front end + Back end (login/logout, register, pdfExport, check_auth, deletePetition, deletePetitionAdmin)</th>
+                </tr>
+                <tr>
+                    <th>Danila Codrin</th>
+                    <th>BD + Front end + Back end (signPetition/unsign, htmlExport, newPetitie, listPetitii, flux Atom)</th>
+                </tr>
+            </table>
+        </figure>
+    </section>
+
+    <section typeof="sa:MaterialsAndMethods">
+
+        <h2>5. Retrospectiva</h2>
+        <figure typeof="sa:Table">
+            <table>
+                <thead>
+                <tr>
+                    <th>Nume</th>
+                    <th>Stare</th>
+                    <th>Likes</th>
+                    <th>Dislikes</th>
+                </tr>
+                </thead>
+                <tr>
+                    <th>Lungu Radu-Ionut</th>
+                    <th>&#9733 &#9733 &#9733 &#9733 &#9734</th>
+                    <th>lucrul in echipa; lucruri noi, interesante;</th>
+                    <th>mai multa coordonare intre membrii echipei;</th>
+                </tr>
+                <tr>
+                    <th>Danila Codrin</th>
+                    <th>&#9733 &#9733 &#9733 &#9733 &#9734</th>
+                    <th>limbaje noi de programare; colaborare;</th>
+                    <th>nopti nedormite; organizarea proasta a timpului;</th>
+                </tr>
+            </table>
+        </figure>
+    </section>
+
+    <section typeof="sa:ReferenceList">
+        <h2>6. Bibliografie</h2>
+        <ol>
+            <li typeof="schema:ScholarlyArticle" resource="https://gist.github.com/jakebellacera/635416">
+            <span property="schema:author" typeof="schema:Person">
+                <span property="schema:familyName">Bellacera</span>
+                <span property="schema:givenName">Jake</span>
+            </span>.
+                <cite property="schema:name">PHP to ICS.</cite>
+                <span property="schema:isPartOf" typeof="schema:PublicationVolume">
+                    <span property="schema:isPartOf" typeof="schema:Periodical">
+                        <span property="schema:name">GitHub.</span>
+                    </span>
+                </span>
+            </li>
+            <li typeof="schema:ScholarlyArticle" resource="https://stackoverflow.com/questions/44499177/json-ajax-problems?noredirect=1#comment75992269_44499177">
+            <span property="schema:author" typeof="schema:Person">
+                <span property="schema:familyName">Saini</span>
+                <span property="schema:givenName">R</span>.
+                <span property="schema:givenName">K</span>. ,
+                <span property="schema:familyName">shubham</span>
+                <span property="schema:givenName">715</span>. ,
+                <span property="schema:familyName">White</span>
+                <span property="schema:givenName">Hat</span>
+            </span>.
+                <cite property="schema:name">Intrebari in legatura cu JSON si $ajax.</cite>
+                <span property="schema:isPartOf" typeof="schema:PublicationVolume">
+                    <span property="schema:isPartOf" typeof="schema:Periodical">
+                        <span property="schema:name">StackOverflow.</span>
+                    </span>
+                </span>
+            </li>
+            <li typeof="schema:ScholarlyArticle" resource="https://pixabay.com/">
+                <cite property="schema:name">Imagini cu drept de reutilizare.</cite>
+                <span property="schema:isPartOf" typeof="schema:PublicationVolume">
+                    <span property="schema:isPartOf" typeof="schema:Periodical">
+                        <span property="schema:name">PixAbay.</span>
+                    </span>
+                </span>
+            </li>
+            <li typeof="schema:ScholarlyArticle" resource="https://www.google.ro/search?q=google+images&hl=ro&site=webhp&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjG5P2_gLnUAhVEVhQKHYLaCsAQ_AUIBigB&biw=1920&bih=947#q=google+images&hl=ro&tbm=isch&tbs=sur:fc">
+                <cite property="schema:name">Imagini cu drept de reutilizare.</cite>
+                <span property="schema:isPartOf" typeof="schema:PublicationVolume">
+                    <span property="schema:isPartOf" typeof="schema:Periodical">
+                        <span property="schema:name">Google images.</span>
+                    </span>
+                </span>
+            </li>
+        </ol>
+    </section>
+</article>
+</body>
