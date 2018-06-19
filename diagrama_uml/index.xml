@@ -1,0 +1,33 @@
+<diagram program="umletino" version="14.2"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>130</x><y>430</y><w>210</w><h>150</h></coordinates><panel_attributes>Petitii
+--
+ID INT PK
+Name Varchar2(50) unique
+Descriere Varchar2(1000)
+Expirare Date
+Nr Semnaturi Int
+Created_At Date</panel_attributes><additional_attributes/></element><element><id>UMLClass</id><coordinates><x>490</x><y>430</y><w>210</w><h>150</h></coordinates><panel_attributes>Creator
+--
+Id Int PK
+user_id FK Users(Id)
+Petitie_ID FK Petitii(id)
+</panel_attributes><additional_attributes/></element><element><id>Relation</id><coordinates><x>330</x><y>500</y><w>180</w><h>40</h></coordinates><panel_attributes>lt=-
+m1=0..n
+m2=1</panel_attributes><additional_attributes>10;10;160;10</additional_attributes></element><element><id>Relation</id><coordinates><x>690</x><y>500</y><w>200</w><h>40</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=1</panel_attributes><additional_attributes>180;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>870</x><y>430</y><w>210</w><h>150</h></coordinates><panel_attributes>Users
+--
+Id Int PK
+Username Varchar2(30) unique
+Password Varchar2(30) unique
+Email Varchar2(50) unique
+Is_Admin Int default 0
+Created_at Date</panel_attributes><additional_attributes/></element><element><id>UMLClass</id><coordinates><x>490</x><y>750</y><w>210</w><h>150</h></coordinates><panel_attributes>Supporters
+--
+Id Int PK
+user_id FK Users(Id)
+Petitie_ID FK Petitii(id)
+Created_at Date</panel_attributes><additional_attributes/></element><element><id>Relation</id><coordinates><x>330</x><y>570</y><w>190</w><h>200</h></coordinates><panel_attributes>lt=-
+m1=0..n
+m2=1..n</panel_attributes><additional_attributes>10;10;160;180</additional_attributes></element><element><id>Relation</id><coordinates><x>690</x><y>570</y><w>210</w><h>200</h></coordinates><panel_attributes>lt=-
+m1=0..n
+m2=1..n</panel_attributes><additional_attributes>180;10;10;180</additional_attributes></element></diagram>
